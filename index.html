@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- page-first -->
+    <form action="" id="signUpForm" class="flex" name="upForm">
+      <div class="container-title">Please Sign Up</div>
+
+      <div class="container-input">
+        <input type="text" id="firstName" placeholder="First name" required>
+        <p>First name</p>
+        <img src="./img/tick.png" class="tick" alt="">
+      </div>
+      
+      <div class="container-input">
+        <input type="text" id="secondName" placeholder="Last name" required>
+        <p>Last name</p>
+        <img src="./img/tick.png" class="tick" alt="">
+      </div>
+      
+      <div class="container-input">
+        <input type="email" id="email" placeholder="Email adress" required> 
+        <p>Email adress</p>
+        <img src="./img/tick.png" class="tick" alt="">
+        <img src="./img/closs.png" class="cross" alt="">
+        <div class="warning-email-storage">This Email already exist!</div>
+      </div>
+      
+      <div class="container-input">
+        <input type="password" id="password" placeholder="Password" required>
+        <p>Password</p>
+        <img src="./img/tick.png" class="tick" alt="">
+        <img src="./img/closs.png" class="cross" alt="">
+        <div class="warning-txt">Please provide a valid Password or Email adress!</div>
+      </div>
+  
+      <input type="button" value="Sign Up" id="signUp">
+      <div class="signIn-txt">Sign in now</div>
+    </form>
+    
+    <!-- page-second -->
+    <form action="" id="signInForm" class="hide" name="inForm">
+      <div class="container-title">Please Sign In</div>
+
+      <div class="container-input">
+        <input type="email" id="email-in" placeholder="Email adress" required> 
+        <p>Email adress</p>
+        <img src="./img/tick.png" class="tickIn" alt="">
+        <img src="./img/closs.png" class="crossIn" alt="">
+      </div>
+      
+      <div class="container-input">
+        <input type="password" id="password-in" placeholder="Password" required>
+        <p>Password</p>
+        <img src="./img/tick.png" class="tickIn" alt="">
+        <img src="./img/closs.png" class="crossIn" alt="">
+        <div class="warning-txt-in">Please provide a valid Password or Email!</div>
+        <div class="warning-txt-storage hide">LocalStorage is emty!</div>
+      </div>
+
+      <input type="button" value="Sign In" id="signIn">
+      <div class="signUp-txt">Sign up now</div>
+    </form>
+
+    <!--block-user -->
+    <div class="block-user hide">
+      <img src="./img/user.png" alt="" class="user-img">
+      <div class="user-name">Vasya Gnyp</div>
+      <div class="user-email">natka@gmail.com</div>
+      <div class="user-profession">Designer & WEB Developer</div>
+      <div class="line"></div>
+      <button class="user-btn-sign-up">Sign Up</button>
+    </div>
+
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
